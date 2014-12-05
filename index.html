@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Resume | Jayendra Kartheek G</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A description of my work, my experience, my skills, my interests">
+    <meta name="keywords" content="Kartheekgj, Jayendra Kartheek, Profile, Resume">
+    <meta name="author" content="Jayedra Kartheek">
+    <!-- styles -->
+    <link href="scripts/customcss.css" rel="stylesheet">
+    <link href="font/css/fontello.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                <a class="brand" href="#profile"><img src="img/user.jpg" />
+                </a>
+                <ul class="nav nav-collapse pull-right">
+                    <li><a href="#profile"><i class="icon-user"></i> Profile</a>
+                    </li>
+                    <li><a href="#skills"><i class="icon-trophy"></i> Skills</a>
+                    </li>
+                    <li><a href="#work"><i class="icon-picture"></i> Work</a>
+                    </li>
+                    <li><a href="#resume"><i class="icon-doc-text"></i> Resume</a>
+                    </li>
+                </ul>
+                <!-- Everything you want hidden at 940px or less, place within here -->
+                <div class="nav-collapse collapse">
+                    <!-- .nav, .navbar-search, .navbar-form, etc -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <!--Profile container-->
+        <div id="profile" class="container">
+            <div class="span2"><img src="img/gj-mini.jpg" style="border-radius: 55%;"> </div>
+            <div class="span5">
+                <h1>Jayendra Kartheek G</h1>
+                <h3>Full Stack Engineer</h3>
+                <p> Hi, i basically work with web stack in technologies like PHP, JavaScript and MySQL. Also interested with topics like DataWareHousing and DataMining. </p>
+                <p> I am a constant learner so i keep on updating with new topics in the technologies i like, i work :). </p>
+                <a href="mailto:kartheekgj@gmail.com?subject=Interested to hire you" class="hire-me"><i class="icon-paper-plane"></i> Hire Me </a>
+                <div class="row social">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://facebook.com/kartheekgj" target="_blank"><img src="img/fb.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/kartheekgj" target="_blank"><img src="img/tw.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/108772484957218811936" target="_blank"><img src="img/go.png" alt="google plus">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kartheekgj?tab=repositories" target="_blank"><img src="img/git.png" alt="github">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://opendummies.blogspot.com" target="_blank"><img src="img/blog.png" alt="OpenDummies Blog">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Social Icons -->
+            <!-- END: Social Icons -->
+        </div>
+        <!--END: Profile container-->
+        <!--Skills container-->
+        <div id="skills" class="container" style="padding-top: 85px;">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="span3">
+                    <div class="ps">
+                        <h4>PHP</h4>
+                        <span>3/5</span>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="ps">
+                        <h4>Javascript</h4>
+                        <span>3/5</span>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="ps">
+                        <h4>MySQL</h4>
+                        <span>3/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               
+				<div class="span3">
+                    <div class="ps">
+                        <h4>JS Frameworks</h4>
+                        <span>Angular,</span>
+						<span>Node,</span>
+						<span>Ember</span>
+                    </div>
+                </div>
+				<div class="span3">
+                    <div class="ps">
+                        <h4>Miscellaneous</h4>
+                        <span>MongoDB,</span>
+						<span>MemCache,</span>
+						<span>Redis,</span>
+						<span>OpenShift</span>
+                    </div>
+                </div>
+				<div class="span3">
+                    <div class="ps">
+                        <h4>Interests</h4>
+						<span>OAUTH,</span> 
+                        <span>DatawareHousing,</span>
+						<span>Data Mining</span>
+			        </div>
+                </div>
+            </div>
+        </div>
+        <!--END: Skills container-->
+        <!-- Works container -->
+		<!-- If you see this means you know i have used angular in this module -->
+        <div id="work" class="container" ng-app="recruiterApp" ng-controller="mainController">
+			<h2>My Experience</h2>
+			<ul class="nav nav-pills nav-tabs" id="nav" ng-controller="tabController" >
+				<li role="presentation" id="{{company.idParam}}" ng-repeat="company in tabCompanies">
+					<a href="#{{company.urlParam}}">{{company.name}} <span class="badge">{{company.fromTo}} </span></a>
+				</li>
+			</ul>
+			<div class="panel-body" style="border: 1px solid #ddd;margin-top:-20px;border-top:0">
+				<ng-view></ng-view>
+			</div>
+        </div>
+        <!--END: Work container-->
+        <!-- Resume container -->
+        <div id="resume" class="container">
+            <h2>My Resume</h2>
+            <h3>You can download my resume for your reference and I hope that we will meet very soon! :)</h3>
+            <div class="btn-center"> <a href="javascript:;" id="hireMe" class="hire-me"><i class="icon-download"></i> Download Resume</a>
+                <h2>180kb</h2>
+            </div>
+        </div>
+        <!--END: Resume container-->
+        <!-- Social Icons -->
+        <div class="row social">
+            <ul class="social-icons">
+                <li>
+                    <a href="https://facebook.com/kartheekgj" target="_blank"><img src="img/fb.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kartheekgj" target="_blank"><img src="img/tw.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/108772484957218811936" target="_blank"><img src="img/go.png" alt="google plus">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kartheekgj?tab=repositories" target="_blank"><img src="img/git.png" alt="github">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://opendummies.blogspot.com" target="_blank"><img src="img/blog.png" alt="OpenDummies Blog">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- END: Social Icons -->
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p class="pull-left"><a href="http://kartheekgj.in">Jayendra kartheek G</a>
+            </p>
+            <p class="pull-right">
+                <a href="mailto:kartheekgj@gmail.com?subject=Interested to hire you" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a>
+            </p>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./scripts/customjs.js"></script>
+ 	<a href="javascript:;" class="cd-top">Top</a>
+</body>
+
+</html>
