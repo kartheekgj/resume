@@ -1,0 +1,311 @@
+/*This stylesheet contains some custom class rather than Bootstrap*/
+		
+a.brand img {
+	border-radius:50%;
+	border:5px solid rgb(255,255,255);
+}
+#profile, #skills, #work, #resume {
+	padding:30px 0;
+	padding-top: 120px;
+	min-height:500px;
+}
+#profile h2, #skills h2, #work h2, #resume h2 {
+	font-weight:normal;
+	color: rgb(57,208,132);
+}
+/***** Profile *****/
+#profile h1 {
+	color:rgb(57,208,132);
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#profile h3 {
+	color:rgb(255,255,255);
+	font-weight: normal;
+}
+#profile p {
+	color:rgb(255,255,255);
+	font-size:18px;
+	line-height: 35px;
+	margin-top: 30px;
+}
+#profile .container .span5 {
+	padding:40px 0;
+}
+a.hire-me {
+	display: inline-block;
+	*display: inline;
+	padding:20px 60px;
+	background:rgb(57,208,132);
+	color: rgb(255,255,255);
+	text-transform:uppercase;
+	font-size:26px;
+	margin:20px 0;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+a.hire-me:hover {
+	text-decoration:none;
+	background:rgb(17,209,112);
+}
+.social {
+	text-align:center;
+	padding-bottom:80px;
+}
+ul.social-icons {
+	margin:20px 0;
+}
+ul.social-icons li {
+	list-style:none;
+	display:inline-block;
+	margin:10px;
+}
+ul.social-icons li:first-child {
+	margin-left:0;
+}
+ul.social-icons li a {
+	opacity:0.8;
+}
+ul.social-icons li a:hover {
+	opacity:1;
+}
+/***** Skills *****/
+#skills .span3 {
+	width:235px;
+	overflow: hidden;
+}
+#skills .span5 {
+	text-align:left;
+	padding:47px 0;
+}
+#skills .ps, #skills .ai, #skills .html, #skills .css {
+	padding:25px;
+	width:100px;
+	height:100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align:center;
+	border:8px solid #203748;
+	float:right;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#skills .ps {
+	background:rgb(48,165,220);
+}
+#skills .ai {
+	background:rgb(238,116,43);
+}
+#skills .html {
+	background:rgb(240,73,73);
+}
+#skills .css {
+	background:rgb(57,208,132);
+}
+#skills .ps:hover, #skills .ai:hover, #skills .html:hover, #skills .css:hover {
+	border:8px solid  rgb(255,255,255);
+}
+#skills .ps h3, #skills .ai h3, #skills .html h3, #skills .css h3 {
+	color: rgb(255,255,255);
+	font-size: 3.4em;
+	font-weight: normal;
+	line-height: 80px;
+}
+#skills .html h3, #skills .css h3 {
+	font-size: 2.2em;
+}
+.expand-bg {
+	background: none repeat scroll 0 0 #EAEDF2;
+	border-radius:16px;
+	height: 16px;
+	margin-bottom: 15px;
+	position: relative;
+	padding: 0 2px;
+}
+.expand {
+	border-radius: 10px;
+	height: 4px;
+	margin: 2px 0;
+	padding: 4px 0 4px 5px;
+	position: absolute;
+}
+#skills .span5 h3 {
+	font-size: 18.5px;
+	line-height: 15px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+#skills .span5 h3 span {
+	float:right;
+}
+.ps2 {
+	width:90%;
+	background:rgb(48,165,220);
+	-moz-animation:html5 2s ease-out;
+	-webkit-animation:html5 2s ease-out;
+}
+.ai2 {
+	width:80%;
+	background:#ee742b;
+	-moz-animation:css3 2s ease-out;
+	-webkit-animation:css3 2s ease-out;
+}
+.html2 {
+	width:75%;
+	background:rgb(240,73,73);
+	-moz-animation:jquery 2s ease-out;
+	-webkit-animation:jquery 2s ease-out;
+}
+.css2 {
+	width:85%;
+	background:rgb(57,208,132);
+	-moz-animation:photoshop 2s ease-out;
+	-webkit-animation:photoshop 2s ease-out;
+}
+ @-moz-keyframes ps2 {
+0% {
+width:0px;
+}
+100% {
+width:90%;
+}
+}
+@-moz-keyframes ai2 {
+0% {
+width:0px;
+}
+100% {
+width:80%;
+}
+}
+@-moz-keyframes html2 {
+0% {
+width:0px;
+}
+100% {
+width:75%;
+}
+}
+@-moz-keyframes css2 {
+0% {
+width:0px;
+}
+100% {
+width:85%;
+}
+}
+ @-webkit-keyframes ps2 {
+0% {
+width:0px;
+}
+100% {
+width:90%;
+}
+}
+@-webkit-keyframes ai {
+0% {
+width:0px;
+}
+100% {
+width:80%;
+}
+}
+@-webkit-keyframes html {
+0% {
+width:0px;
+}
+100% {
+width:75%;
+}
+}
+@-webkit-keyframes css {
+0% {
+width:0px;
+}
+100% {
+width:85%;
+}
+}
+
+/***** Resume container *****/
+#resume h3 {
+	margin:60px 0;
+}
+#resume .btn-center {
+	text-align:center;
+}
+.footer {
+	background:rgb(53,82,103);
+}
+.footer p {
+	margin:20px 0;
+}
+.footer p a {
+	color: rgb(255,255,255);
+	text-decoration:none;
+}
+.footer p a:hover {
+	color:rgb(57,208,132);
+}
+
+
+.cd-top {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgb(240,73,73) url(../img/circle-light.png) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: rgb(232,98,86);
+  opacity: 1;
+  
+}
+.cd-top:hover{
+	border:1px solid  rgb(255,255,255)
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    bottom: 60px;
+    height: 55px;
+    right: 30px;
+    width: 55px;
+  }
+}
+
