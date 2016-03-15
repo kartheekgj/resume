@@ -1,9 +1,9 @@
-resume
+Resume - Jayendra Kartheek G
 ======
 
-  The following application is made in bootstrap and HTML.<br />
-  A part(MY WORK section) of it is made with angular JS with routing.<br />
-  This is done entirely for fun.<br />
+  This is a application which shows about what i work, skills and interest areas.
+  
+  
   &nbsp;&nbsp;&nbsp;<a href="http://resume-kartheekgj.rhcloud.com/">Demo</a><br />
  
 
