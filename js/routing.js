@@ -25,7 +25,8 @@ myApp.controller('tabController', function($scope, $routeParams, $http) {
 	
 	$http({
 		url :  'router/' + $scope.page + '.html',
-		method: 'POST'
+		method: 'POST',
+		cache:true
 		
 	}).success(function(html){
 		$scope.data = html;
@@ -46,8 +47,9 @@ myApp.directive('template',function($compile){
 });
 
 myApp.controller('mainController',function($scope){
-	$scope.tabCompanies = [{name: 'Cognizant Technology Solutions', fromTo : 'Aug ’14 – tillDate', urlParam:'cts', idParam:'cts'},
-							{name: 'KRDS Pvt LTD', fromTo : 'Mar ’14 – Jul ’14', urlParam:'krds', idParam:'krds'},
+	$scope.tabCompanies = [{name: 'SAP Labs Pvt Ltd.', fromTo : 'May ’16 – tillDate', urlParam:'sap', idParam:'sap'},
+							{name: 'Cognizant Technology Solutions', fromTo : 'Aug ’14 – May ’16', urlParam:'cts', idParam:'cts'},
+							{name: 'KRDS Pvt Ltd.', fromTo : 'Mar ’14 – Jul ’14', urlParam:'krds', idParam:'krds'},
 							{name: 'BookMyShow', fromTo : 'Jun ’12 – Mar ’14', urlParam:'bookmyshow', idParam:'bookmyshow'} ,
 							{name: 'ChangeRepublic.com', fromTo : 'July’11 – July ’12', urlParam:'cr', idParam:'cr'},
 						];
