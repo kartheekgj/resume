@@ -9,7 +9,7 @@
     <meta name="author" content="Jayedra Kartheek">
     <!-- styles -->
 	<link rel="shortcut icon" href="./img/gj-favicon.ico" type="image/x-icon" />
-    <link href="scripts/customcss.css" rel="stylesheet">
+    <link href="./css/customcss.css" rel="stylesheet">
     <link href="font/css/fontello.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -25,8 +25,8 @@
                     </li>
                     <li><a href="#skills"><i class="icon-trophy"></i> Skills</a>
                     </li>
-                    <li><a href="#work"><i class="icon-picture"></i> Work</a>
-                    </li>
+                    <!--li><a href="#work"><i class="icon-picture"></i> Work</a>
+                    </li-->
                     <li><a href="#resume"><i class="icon-doc-text"></i> Resume</a>
                     </li>
                 </ul>
@@ -131,7 +131,7 @@
         <!--END: Skills container-->
         <!-- Works container -->
 		<!-- If you see this means you know i have used angular in this module -->
-        <div id="work" class="container" ng-app="recruiterApp" ng-controller="mainController">
+        <!--div id="work" class="container" ng-app="recruiterApp" ng-controller="mainController">
 			<h2>My Experience</h2>
 			<ul class="nav nav-pills nav-tabs" id="nav" ng-controller="tabController" >
 				<li role="presentation" id="{{company.idParam}}" ng-repeat="company in tabCompanies">
@@ -141,13 +141,14 @@
 			<div class="panel-body" style="border: 1px solid #ddd;margin-top:-20px;border-top:0">
 				<ng-view></ng-view>
 			</div>
-        </div>
+        </div-->
         <!--END: Work container-->
         <!-- Resume container -->
         <div id="resume" class="container">
             <h2>My Resume</h2>
             <h3>You can download my resume for your reference and I hope that we will meet very soon! :)</h3>
-            <div class="btn-center"> <a href="javascript:;" id="hireMe" class="hire-me"><i class="icon-download"></i> Download Resume</a>
+            <div class="btn-center"> 	
+            	<a href="javascript:;" id="hireMe" class="hire-me"><i class="icon-download"></i> Download Resume</a>
             </div>
         </div>
         <!--END: Resume container-->
@@ -181,7 +182,7 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <p class="pull-left"><a href="javascript:window.location.reload(window.location.href);">Jayendra kartheek G</a>
+            <p class="pull-left"><a href="https://github.com/kartheekgj?tab=repositories" target="_blank">Jayendra kartheek G</a>
             </p>
             <p class="pull-right">
                 <a href="mailto:kartheekgj@gmail.com?subject=Interested to hire you" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a>
@@ -189,8 +190,18 @@
         </div>
     </div>
     <!-- Scripts -->
-    <script src="./scripts/customjs.js"></script>
+    <script src="./js/customjs.js"></script>
  	<a href="javascript:;" class="cd-top">Top</a>
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83738241-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>
