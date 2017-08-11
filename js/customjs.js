@@ -1180,7 +1180,7 @@ $(window).scroll(function(){($(this).scrollTop()>offset)?$back_to_top.addClass("
 if($(this).scrollTop()>offset_opacity){$back_to_top.addClass("cd-fade-out")
 }});$back_to_top.on("click",function(event){event.preventDefault();
 $("body,html").animate({scrollTop:0},scroll_top_duration)
-});$("#hireMe").click(function(){window.open("https://github.com/kartheekgj/resume/raw/master/img/JAYENDRAKARTHEEK.pdf","_blank")
+});$("#hireMe").click(function(){window.open("https://github.com/kartheekgj/resume/blob/master/img/JAYENDRAKARTHEEK.pdf","_blank")
 })});(function(W,O,s){function F(b){return function(){for(var a=arguments[0],c=1,a="["+(b?b+":":"")+a+"] http://errors.angularjs.org/1.2.1/"+(b?b+"/":"")+a;
 c<arguments.length;
 c++){a=a+(1==c?"?":"&")+"p"+(c-1)+"="+encodeURIComponent("function"==typeof arguments[c]?arguments[c].toString().replace(/ \{[\s\S]*$/,""):"undefined"==typeof arguments[c]?"undefined":"string"!=typeof arguments[c]?JSON.stringify(arguments[c]):arguments[c])
