@@ -1,0 +1,47 @@
+	
+Accepted Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took a week. I interviewed at Walmart (New Delhi) in April 2019.
+
+Interview
+
+The first round was too long where they asked in depth in js and React. Then the person who took round 2 was asking me a puzzle like question in which the only way to achieve the answer was to write a bad code which we won't do in day to day life as FE dev. They should be careful about the person they choose to interview
+
+Interview Questions
+
+HTML
+
+different tags in html
+Primitive vs non primitive tags
+Why need to have different tag names?
+What is doctype
+What happens if we dont use it?
+
+JavaScript
+Currying and closures
+Using this in js
+Let var const
+React lifecycle
+Need for redux?
+How redux works
+Type in action dispatching
+Flattening an array
+Sum(1)(2)(3)()
+Event delegation
+Y Combining reducers
+Call Apply bind
+Why redux?
+When do u use refs vs state?
+How to update state
+React Virtual dom and dom diffing
+Using encapsulation
+What is SPA how is it different from multipage and its uses
+
+Css
+Increment width and height 3 times without using width and height
+Flexbox
+Postion properties
+Centering without margin top0 rlb 0
